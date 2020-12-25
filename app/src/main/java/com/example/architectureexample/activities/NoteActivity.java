@@ -1,4 +1,4 @@
-package com.example.architectureexample;
+package com.example.architectureexample.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +17,10 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.architectureexample.R;
+import com.example.architectureexample.db.entities.Note;
+import com.example.architectureexample.ui.adapters.NoteAdapter;
+import com.example.architectureexample.viewmodel.NoteViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;

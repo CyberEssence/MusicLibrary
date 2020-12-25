@@ -1,9 +1,5 @@
-package com.example.architectureexample;
+package com.example.architectureexample.db.entities;
 
-import android.icu.util.TimeUnit;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.DiffUtil;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;

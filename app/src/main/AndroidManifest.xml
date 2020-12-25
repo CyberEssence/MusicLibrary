@@ -11,16 +11,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:launchMode="singleTop">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".AddEditNoteActivity"
-            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Note"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".NoteAdapter"
@@ -30,8 +20,6 @@
         <activity android:name=".NoteRepository"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".NoteViewModel"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".NoteActivity"
             android:parentActivityName=".MainActivity"/>
     </application>
 

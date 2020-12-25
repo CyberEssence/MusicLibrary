@@ -1,10 +1,13 @@
-package com.example.architectureexample;
+package com.example.architectureexample.viewmodel;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.example.architectureexample.db.entities.Note;
+import com.example.architectureexample.repository.NoteRepository;
 
 import java.util.List;
 

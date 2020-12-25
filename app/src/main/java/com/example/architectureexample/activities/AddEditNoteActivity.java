@@ -1,6 +1,4 @@
-package com.example.architectureexample;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.architectureexample.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +8,10 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.architectureexample.R;
 
 public class AddEditNoteActivity extends AppCompatActivity {
 

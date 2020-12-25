@@ -1,4 +1,4 @@
-package com.example.architectureexample;
+package com.example.architectureexample.ui.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,8 @@ import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.example.architectureexample.R;
+import com.example.architectureexample.db.entities.Note;
 
 public class NoteAdapter extends ListAdapter<Note, NoteAdapter.NoteHolder> {
 

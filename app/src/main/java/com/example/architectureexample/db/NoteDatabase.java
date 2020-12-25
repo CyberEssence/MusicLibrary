@@ -1,4 +1,4 @@
-package com.example.architectureexample;
+package com.example.architectureexample.db;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -9,12 +9,17 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import java.util.concurrent.TimeUnit;
-
-import static java.util.concurrent.TimeUnit.MILLISECONDS;
+import com.example.architectureexample.db.entities.Album;
+import com.example.architectureexample.db.entities.Genre;
+import com.example.architectureexample.db.entities.Group;
+import com.example.architectureexample.db.entities.Language;
+import com.example.architectureexample.db.entities.Musician;
+import com.example.architectureexample.db.entities.Note;
+import com.example.architectureexample.db.entities.Public;
+import com.example.architectureexample.db.entities.PublicOfGenre;
+import com.example.architectureexample.db.entities.TypesOfPublic;
 
 @Database(entities = {Note.class,
-        NoteLanguage.class,
         Public.class,
         PublicOfGenre.class,
         TypesOfPublic.class,
@@ -22,8 +27,7 @@ import static java.util.concurrent.TimeUnit.MILLISECONDS;
         Language.class,
         Group.class,
         Genre.class,
-        Album.class,
-        User.class}, version = 4, exportSchema = false) //exportSchema = false потом изменить
+        Album.class}, version = 4, exportSchema = false) //exportSchema = false потом изменить
 public abstract class NoteDatabase extends RoomDatabase {
 
     private static NoteDatabase instance;
@@ -41,7 +45,7 @@ public abstract class NoteDatabase extends RoomDatabase {
         return instance;
     }
 
-    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
+    private static Callback roomCallback = new Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
